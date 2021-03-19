@@ -5,7 +5,7 @@ module.exports = {
   ],
   coverageDirectory: 'covare',
   coverageProvider: 'v8',
-  testEnviromment: 'node',
+  testEnvironment: 'node',
   transform: {
     '.+\\.ts$': 'ts-jest'
   }
