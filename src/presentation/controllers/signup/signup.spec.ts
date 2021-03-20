@@ -1,5 +1,5 @@
 import { SignUpController } from './signup'
-import { MissingParamError, InvalidParamError } from '../errors'
+import { MissingParamError, InvalidParamError } from '../../errors'
 
 interface SutType {
   sut: SignUpController
@@ -83,4 +83,19 @@ describe('SignUp Controller', () => {
     expect(httpResponse.statusCode).toBe(400)
     expect(httpResponse.body).toEqual(new InvalidParamError('passwordConfirmation'))
   })
+
+  // test('Should return 400 if an invalid email is provided', async () => {
+  //   const { sut } = makeSut()
+  //   const httpRequest = {
+  //     body: {
+  //       name: 'any_name',
+  //       email: 'any_email@gmail',
+  //       password: 'any_pass',
+  //       passwordConfirmation: 'any_pass'
+  //     }
+  //   }
+  //   const httpResponse = await sut.handle(httpRequest)
+  //   expect(httpResponse.statusCode).toBe(400)
+  //   expect(httpResponse.body).toEqual(new InvalidParamError('email'))
+  // })
 })

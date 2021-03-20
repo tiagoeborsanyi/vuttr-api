@@ -1,6 +1,6 @@
-import { HttpRequest, HttpResponse, Controller } from '../protocols'
-import { MissingParamError, InvalidParamError } from '../errors'
-import { badRequest } from '../helpers/http-helper'
+import { HttpRequest, HttpResponse, Controller } from './signup-protocols'
+import { MissingParamError, InvalidParamError } from '../../errors'
+import { badRequest } from '../../helpers/http-helper'
 
 export class SignUpController implements Controller {
   async handle (httpRequest: HttpRequest): Promise<HttpResponse> {
