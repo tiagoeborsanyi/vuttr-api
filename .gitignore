@@ -3,3 +3,5 @@ dist
 coverage
 covare
 globalConfig.json
+env.ts
+globalConfig.json
