@@ -2,4 +2,3 @@ node_modules
 dist
 coverage
 covare
-globalConfig.json
