@@ -4,4 +4,4 @@ coverage
 covare
 globalConfig.json
 env.ts
-globalConfig.json
+./globalConfig.json

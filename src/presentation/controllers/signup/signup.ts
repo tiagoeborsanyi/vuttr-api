@@ -32,7 +32,7 @@ export class SignUpController implements Controller {
         email,
         password
       })
-      console.log(account)
+      // console.log(account)
       return ok(account)
     } catch {
       return serverError()
